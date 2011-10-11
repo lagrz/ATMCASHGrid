@@ -17,6 +17,11 @@
 .grid ul ul li { float: left; overflow: hidden; }
 .grid .footer { clear:both; position:relative; }
 
+/*clearfix*/
+.grid ul:before, .grid ul:after { content: ""; display: table; }
+.grid ul:after { clear: both; }
+.grid ul { *zoom: 1; }
+
 /*themes*/
 .grid.default { border: 1px solid #000; }
 .grid.default ul ul {margin: 3px;}
